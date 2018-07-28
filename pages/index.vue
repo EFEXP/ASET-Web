@@ -1,60 +1,37 @@
-<template>
-  <div>
-  
-    <section class="hero is-dark is-fullheight" id="top">
-      <div class="hero-head">
-        <toolbar/>
-
-      </div>
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title" id="title">
-        ASET
-      </h1>
-      <h2 class="subtitle">
-        東京理科大学外来生物対策研究会
-      </h2>
-    </div>
-  </div>
-</section>
-  <section class="hero is-warning">
-       <div class="hero-body">
-    <div class="container has-text-centered">
-     <span class="icon is-large">
-  <i class="fas fa-3x fa-exclamation-triangle"></i>
-</span>
-      <h1 class="title">
-        WE ARE SORRY, NOW UNDER CONSTRUCTION !
-      </h1>
-      <h2 class="subtitle">
-         このWebサイトは現在工事中です。
-      </h2>
-    </div>
-  </div>
-    </section>
-    <section class="hero is-dark">
-       <div class="hero-body">
-    <div class="container has-text-centered">
-       <span class="icon is-large">
-  <i class="fas fa-3x fa-utensils"></i>
-</span>
-      <h1 class="title">
-        How To Cook Alien Species
-      </h1>
-      <h2 class="subtitle">
-        傾向と対策
-      </h2>
-    </div>
-  </div>
-    </section>
-    <footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-       &copy;{{ new Date().getFullYear() }} —  <strong>Alien Species Eliminate Team</strong> 
-    </p>
-  </div>
-</footer>
-  </div>
+<template lang="pug">
+div
+  section#top.hero.is-dark.is-fullheight
+    .hero-head
+      toolbar
+    .hero-body
+      .container.has-text-centered
+        h1#title.title
+          | ASET
+        h2.subtitle
+          | 東京理科大学外来生物対策研究会
+  section.hero.is-warning
+    .hero-body
+      .container.has-text-centered
+        span.icon.is-large
+          i.fas.fa-3x.fa-exclamation-triangle
+        h1.title
+          | WE ARE SORRY, NOW UNDER CONSTRUCTION !
+        h2.subtitle
+          | このWebサイトは現在工事中です。
+  section.hero.is-dark
+    .hero-body
+      .container.has-text-centered
+        span.icon.is-large
+          i.fas.fa-3x.fa-utensils
+        h1.title
+          | How To Cook Alien Species
+        h2.subtitle
+          | 傾向と対策
+  footer.footer
+    .content.has-text-centered
+      p
+        | ©{{ new Date().getFullYear() }} —  
+        strong Alien Species Eliminate Team
 </template>
 
 <script>
